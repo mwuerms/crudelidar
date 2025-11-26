@@ -12,11 +12,14 @@
 
 void stepm_init(void);
 
-uint8_t stepm_get_m0_pos(void);
-uint8_t stepm_get_m0_dir(void);
-uint8_t stepm_get_m1_pos(void);
-uint8_t stepm_get_m1_dir(void);
+int8_t stepm_get_m0_pos(void);
+int8_t stepm_get_m0_dir(void);
+int8_t stepm_get_m1_pos(void);
+int8_t stepm_get_m1_dir(void);
 
-void stepm_move(void);
+uint8_t stepm_move(void);
+void stepm_goto(int8_t m0_steps, int8_t m1_steps);
+void stepm_set_scan_line(int8_t m0_steps, int8_t m1_steps);
+void stepm_stop(void);
 
-#endif // _STEPM_H_
+#endif  // _STEPM_H_

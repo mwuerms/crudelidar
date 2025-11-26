@@ -12,5 +12,4 @@
 
 void dsens_init(void);
 
-#endif // _DSENSE_H_
-
+#endif  // _DSENSE_H_

@@ -8,5 +8,5 @@
 #include "dsens.h"
 
 void dsens_init(void) {
-    return;
+  return;
 }
